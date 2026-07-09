@@ -1,0 +1,74 @@
+﻿# ==========================================
+# ChaosNexus .gitignore
+# ==========================================
+
+# Build directories (out-of-source builds only)
+build/
+out/
+cmake-build-*/
+
+# CMake artifacts
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+
+# Ninja
+.ninja_deps
+.ninja_log
+build.ninja
+
+# Visual Studio / MSVC
+.vs/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.ilk
+*.pdb
+*.obj
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/c_cpp_properties.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# clang-tidy / clang-format caches
+.clang-tidy.cache/
+*.clang-tidy.tmp
+
+# Doxygen output
+docs/generated/
+docs/html/
+docs/xml/
+
+# External / fetched dependencies
+external/*
+!external/.gitkeep
+
+# Object, library, executable files
+*.o
+*.obj
+*.lib
+*.a
+*.exe
+*.dll
+*.exp
+*.pdb
+
+# OS-specific
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Logs and temp files
+*.log
+*.tmp
+*~
