@@ -1,0 +1,29 @@
+﻿# ==========================================
+# ChaosNexus .gitattributes
+# ==========================================
+
+# Default: normalize all text files to LF in the repo,
+# checked out as native line endings per-platform.
+* text=auto eol=lf
+
+# Explicit source/config files — always LF
+*.cpp text eol=lf
+*.hpp text eol=lf
+*.h   text eol=lf
+*.cc  text eol=lf
+*.cxx text eol=lf
+*.cmake text eol=lf
+CMakeLists.txt text eol=lf
+*.md  text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Windows-specific scripts — always CRLF
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+
+# Binary files — never touch
+*.png binary
+*.jpg binary
+*.pdf binary
