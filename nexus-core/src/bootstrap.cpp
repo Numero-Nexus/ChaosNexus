@@ -10,7 +10,8 @@ namespace nexus::core {
 // Returns the bootstrap status of the nexus-core module.
 // This function is a temporary build-verification anchor and will be
 // removed once real nexus-core functionality is implemented.
-auto bootstrap_ok() noexcept -> bool {
+auto bootstrap_ok() noexcept -> bool
+{
     return true;
 }
 

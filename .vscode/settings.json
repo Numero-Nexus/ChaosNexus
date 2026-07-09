@@ -1,0 +1,36 @@
+﻿{
+  "cmake.configureOnOpen": true,
+  "cmake.useCMakePresets": "always",
+  "cmake.configurePreset": "default",
+  "cmake.buildPreset": "default",
+  "cmake.generator": "Ninja",
+
+  "editor.formatOnSave": true,
+  "editor.tabSize": 4,
+  "editor.insertSpaces": true,
+  "editor.rulers": [100],
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.encoding": "utf8",
+
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools",
+    "editor.formatOnSave": true
+  },
+  "[cmake]": {
+    "editor.tabSize": 4
+  },
+
+  "C_Cpp.clang_format_style": "file",
+  "C_Cpp.codeAnalysis.clangTidy.enabled": true,
+  "C_Cpp.default.cppStandard": "c++23",
+  "C_Cpp.default.intelliSenseMode": "windows-msvc-x64",
+
+  "files.exclude": {
+    "**/build": true
+  },
+  "search.exclude": {
+    "**/build": true,
+    "**/external": true
+  }
+}

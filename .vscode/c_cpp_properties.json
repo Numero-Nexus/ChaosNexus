@@ -1,0 +1,18 @@
+﻿{
+  "version": 4,
+  "configurations": [
+    {
+      "name": "Win32-MSVC",
+      "includePath": [
+        "${workspaceFolder}/nexus-core/include",
+        "${workspaceFolder}/nexus-sdk/include",
+        "${workspaceFolder}/**"
+      ],
+      "defines": [],
+      "cStandard": "c17",
+      "cppStandard": "c++23",
+      "intelliSenseMode": "windows-msvc-x64",
+      "configurationProvider": "ms-vscode.cmake-tools"
+    }
+  ]
+}

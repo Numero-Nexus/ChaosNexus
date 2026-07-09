@@ -4,6 +4,7 @@
 // nexus-cli is the primary operational entry point for running and
 // inspecting scenarios. No CLI logic is implemented yet.
 
-int main() {
+int main()
+{
     return 0;
 }

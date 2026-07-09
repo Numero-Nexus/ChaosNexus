@@ -5,6 +5,7 @@
 // environment for simulation results. No visualization logic is
 // implemented yet.
 
-int main() {
+int main()
+{
     return 0;
 }

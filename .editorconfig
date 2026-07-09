@@ -1,0 +1,39 @@
+﻿# ==========================================
+# ChaosNexus .editorconfig
+# ==========================================
+# Editor-agnostic formatting rules. Complements .clang-format (which
+# governs C++ code style) by covering whitespace/indent conventions
+# for all file types, including ones clang-format doesn't touch.
+
+root = true
+
+[*]
+charset = utf-8
+insert_final_newline = true
+trim_trailing_whitespace = true
+end_of_line = lf
+indent_style = space
+indent_size = 4
+
+[*.{cpp,hpp,h,cc,cxx}]
+indent_size = 4
+
+[CMakeLists.txt]
+indent_size = 4
+
+[*.cmake]
+indent_size = 4
+
+[*.{json,yml,yaml}]
+indent_size = 2
+
+[*.md]
+indent_size = 2
+trim_trailing_whitespace = false
+
+[*.{ps1,bat}]
+end_of_line = crlf
+indent_size = 4
+
+[*.{sln,vcxproj}]
+end_of_line = crlf

@@ -4,6 +4,7 @@
 // nexus-bench is the benchmarking framework built atop nexus-core and
 // nexus-sdk. No benchmarking logic is implemented yet.
 
-int main() {
+int main()
+{
     return 0;
 }
