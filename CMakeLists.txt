@@ -44,6 +44,7 @@ endif()
 # ------------------------------------------
 option(NEXUS_WARNINGS_AS_ERRORS "Treat compiler warnings as errors" OFF)
 option(NEXUS_ENABLE_SANITIZERS  "Enable AddressSanitizer/UBSan instrumentation" OFF)
+option(NEXUS_BUILD_TESTS "Build the ChaosNexus test suite" ON)
 
 # ------------------------------------------
 # Shared CMake modules
@@ -61,6 +62,14 @@ add_subdirectory(nexus-cli)
 add_subdirectory(nexus-bench)
 add_subdirectory(nexus-lab)
 add_subdirectory(nexus-plugins)
+
+# ------------------------------------------
+# Tests
+# ------------------------------------------
+if(NEXUS_BUILD_TESTS)
+    enable_testing()
+    add_subdirectory(tests)
+endif()
 
 # ------------------------------------------
 # Apply shared warning policy to buildable targets
