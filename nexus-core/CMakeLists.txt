@@ -2,10 +2,13 @@
 # nexus-core — Deterministic Simulation Engine
 # ==========================================
 #
-# This is a bootstrap placeholder for Phase 7A (Repository Bootstrap).
-# No simulation engine logic exists yet. This target exists only to
-# verify that the module compiles and links correctly within the
-# overall CMake project structure.
+# Phase 7A bootstrap target, extended in Phase 8A to expose the
+# top-level include/ root (Core Utilities convention — see
+# 04_SOFTWARE_DESIGN_SPECIFICATION.md / Phase 8A ADR) alongside the
+# original per-module include root. No simulation engine logic exists
+# yet; this target still exists primarily to prove the module compiles
+# and links correctly, now carrying real Core Utilities content
+# (Platform Utilities) as of Phase 8A.
 
 add_library(nexus-core STATIC
     src/bootstrap.cpp
@@ -14,6 +17,7 @@ add_library(nexus-core STATIC
 target_include_directories(nexus-core
     PUBLIC
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+        $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/include>
         $<INSTALL_INTERFACE:include>
 )
 

@@ -1,5 +1,5 @@
-﻿# ==========================================
-# tests/unit/utilities — Shared Utility Unit Tests
+# ==========================================
+# tests/unit/utilities � Shared Utility Unit Tests
 # ==========================================
 #
 # Bootstrap placeholder for Phase 7B. No shared utility code exists

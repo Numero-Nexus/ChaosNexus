@@ -14,6 +14,7 @@ function(nexus_set_warnings target)
         target_compile_options(${target} PRIVATE
             /W4          # High warning level
             /permissive- # Strict standards conformance
+            /Zc:__cplusplus
             /w14242      # Possible loss of data (conversions)
             /w14254      # Possible loss of data (bitfields)
             /w14263      # Member function does not override base
