@@ -1,5 +1,5 @@
 # ==========================================
-# tests/unit — Unit Test Suites
+# tests/unit ï¿½ Unit Test Suites
 # ==========================================
 #
 # Mirrors the top-level nexus-* module structure so test ownership
@@ -13,3 +13,4 @@ add_subdirectory(sdk)
 add_subdirectory(plugins)
 add_subdirectory(utilities)
 add_subdirectory(platform)
+add_subdirectory(types)
