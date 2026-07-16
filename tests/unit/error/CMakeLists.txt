@@ -1,0 +1,10 @@
+nexus_add_test_executable(nexus-error-tests
+    SOURCES
+        test_error_code.cpp
+        test_error.cpp
+        test_result.cpp
+        test_exception.cpp
+        test_assert.cpp
+    LIBS
+        nexus::core
+)
