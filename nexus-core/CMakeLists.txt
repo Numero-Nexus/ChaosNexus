@@ -16,6 +16,7 @@ add_library(nexus-core STATIC
     src/logging/console_sink.cpp
     src/logging/logger.cpp
     src/error/error_format.cpp
+    src/identity/uuid_format.cpp
 )
 
 target_include_directories(nexus-core
