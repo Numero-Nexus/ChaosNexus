@@ -20,6 +20,7 @@ add_library(nexus-core STATIC
     src/text/strings.cpp
     src/config/config_key.cpp
     src/config/config_value.cpp
+    src/hash/hash.cpp
 )
 
 target_include_directories(nexus-core

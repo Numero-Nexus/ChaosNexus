@@ -19,4 +19,5 @@ add_subdirectory(error)
 add_subdirectory(identity)
 add_subdirectory(text)
 add_subdirectory(config)
+add_subdirectory(hash)
 
