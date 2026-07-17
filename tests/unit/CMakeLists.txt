@@ -18,3 +18,5 @@ add_subdirectory(logging)
 add_subdirectory(error)
 add_subdirectory(identity)
 add_subdirectory(text)
+add_subdirectory(config)
+
