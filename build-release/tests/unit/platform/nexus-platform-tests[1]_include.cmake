@@ -1,0 +1,5 @@
+if(EXISTS "D:/NumeroNexus/ChaosNexus/build-release/tests/unit/platform/nexus-platform-tests[1]_tests.cmake")
+  include("D:/NumeroNexus/ChaosNexus/build-release/tests/unit/platform/nexus-platform-tests[1]_tests.cmake")
+else()
+  add_test(nexus-platform-tests_NOT_BUILT nexus-platform-tests_NOT_BUILT)
+endif()

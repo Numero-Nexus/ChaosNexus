@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "nexus-test-common.dir\\Debug\\bootstrap.obj",
+            "outputs": [
+                "D:\\NumeroNexus\\ChaosNexus\\build-release\\tests\\common\\Debug\\nexus-test-common.pdb",
+                "nexus-test-common.dir\\Debug\\"
+            ],
+            "requires": []
+        }
+    ]
+}

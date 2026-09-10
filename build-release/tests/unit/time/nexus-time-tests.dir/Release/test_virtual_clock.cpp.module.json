@@ -1,0 +1,13 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "nexus-time-tests.dir\\Release\\test_virtual_clock.obj",
+            "outputs": [
+                "nexus-time-tests.dir\\Release\\"
+            ],
+            "requires": []
+        }
+    ]
+}

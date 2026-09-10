@@ -1,0 +1,40 @@
+Duration.DefaultConstructedIsZero 3 0.0071938
+Duration.FromTicksRoundTripsPositiveAndNegative 3 0.00686687
+Duration.FromTicksRejectsI64Min 3 0.0069857
+Duration.EqualityAndOrdering 3 0.00727623
+Duration.AdditionAndSubtraction 3 0.00748503
+Duration.AdditionIdentity 3 0.00696253
+Duration.AdditionOverflowThrows 3 0.00754107
+Duration.SubtractionUnderflowThrows 3 0.00738937
+Duration.IsTriviallyCopyable 3 0.0071729
+TimePoint.DefaultConstructedIsEpoch 3 0.0069935
+TimePoint.FromTicksRoundTrips 3 0.00820707
+TimePoint.FromTicksRejectsNegative 3 0.00758173
+TimePoint.EqualityAndOrdering 3 0.00747623
+TimePoint.AddDurationAdvancesTime 3 0.00719747
+TimePoint.SubtractDurationMovesBackward 3 0.00850923
+TimePoint.AddZeroDurationIsIdentity 3 0.00784377
+TimePoint.DifferenceOfTwoTimePointsYieldsDuration 3 0.0079737
+TimePoint.DifferenceOfIdenticalPointsIsZero 3 0.00792833
+TimePoint.SubtractingDurationBelowZeroThrows 3 0.00829963
+TimePoint.AdditionOverflowThrows 3 0.007501
+TimePoint.IsTriviallyCopyable 3 0.00753243
+VirtualClock.InitialTimeIsEpoch 3 0.0077943
+VirtualClock.AdvanceMovesCurrentTimeForward 3 0.00789587
+VirtualClock.RepeatedAdvancementAccumulates 3 0.0074537
+VirtualClock.AdvanceToEqualCurrentTimeIsNoOp 3 0.0073975
+VirtualClock.BackwardAdvancementThrows 3 0.0071008
+VirtualClock.DeterministicGivenIdenticalOperationSequence 3 0.00730943
+TimeInvariants.DurationAdditionIsAssociative 3 0.00753093
+TimeInvariants.TimePointPlusDurationSumIsAssociative 3 0.00755327
+TimeInvariants.TimePointMinusThenPlusReturnsOriginal 3 0.00693753
+TimeInvariants.DifferenceThenAddReconstructsLaterPoint 3 0.00753917
+TimeDeterminism.IdenticalArithmeticSequenceProducesIdenticalTrace 3 0.00764983
+TimeDeterminism.IdenticalArithmeticSequenceProducesIdenticalFinalResult 3 0.00676343
+TimeDeterminism.RepeatedManyTimesRemainsStable 3 0.0073396
+VariousStartAndTargetPairs/VirtualClockMonotonicityProperty.AdvanceToTargetGreaterOrEqualNeverDecreasesCurrent/(0, 0) 3 0.00739127
+VariousStartAndTargetPairs/VirtualClockMonotonicityProperty.AdvanceToTargetGreaterOrEqualNeverDecreasesCurrent/(0, 1) 3 0.00777077
+VariousStartAndTargetPairs/VirtualClockMonotonicityProperty.AdvanceToTargetGreaterOrEqualNeverDecreasesCurrent/(5, 5) 3 0.00735283
+VariousStartAndTargetPairs/VirtualClockMonotonicityProperty.AdvanceToTargetGreaterOrEqualNeverDecreasesCurrent/(5, 6) 3 0.00727417
+VariousStartAndTargetPairs/VirtualClockMonotonicityProperty.AdvanceToTargetGreaterOrEqualNeverDecreasesCurrent/(100, 100000) 3 0.0106774
+---

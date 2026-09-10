@@ -1,0 +1,242 @@
+{
+  "tests": 39,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "Duration",
+      "tests": 9,
+      "testsuite": [
+        {
+          "name": "DefaultConstructedIsZero",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_duration.cpp",
+          "line": 14
+        },
+        {
+          "name": "FromTicksRoundTripsPositiveAndNegative",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_duration.cpp",
+          "line": 21
+        },
+        {
+          "name": "FromTicksRejectsI64Min",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_duration.cpp",
+          "line": 28
+        },
+        {
+          "name": "EqualityAndOrdering",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_duration.cpp",
+          "line": 33
+        },
+        {
+          "name": "AdditionAndSubtraction",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_duration.cpp",
+          "line": 46
+        },
+        {
+          "name": "AdditionIdentity",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_duration.cpp",
+          "line": 56
+        },
+        {
+          "name": "AdditionOverflowThrows",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_duration.cpp",
+          "line": 63
+        },
+        {
+          "name": "SubtractionUnderflowThrows",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_duration.cpp",
+          "line": 69
+        },
+        {
+          "name": "IsTriviallyCopyable",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_duration.cpp",
+          "line": 75
+        }
+      ]
+    },
+    {
+      "name": "TimePoint",
+      "tests": 12,
+      "testsuite": [
+        {
+          "name": "DefaultConstructedIsEpoch",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_time_point.cpp",
+          "line": 15
+        },
+        {
+          "name": "FromTicksRoundTrips",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_time_point.cpp",
+          "line": 22
+        },
+        {
+          "name": "FromTicksRejectsNegative",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_time_point.cpp",
+          "line": 28
+        },
+        {
+          "name": "EqualityAndOrdering",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_time_point.cpp",
+          "line": 33
+        },
+        {
+          "name": "AddDurationAdvancesTime",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_time_point.cpp",
+          "line": 44
+        },
+        {
+          "name": "SubtractDurationMovesBackward",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_time_point.cpp",
+          "line": 52
+        },
+        {
+          "name": "AddZeroDurationIsIdentity",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_time_point.cpp",
+          "line": 60
+        },
+        {
+          "name": "DifferenceOfTwoTimePointsYieldsDuration",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_time_point.cpp",
+          "line": 67
+        },
+        {
+          "name": "DifferenceOfIdenticalPointsIsZero",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_time_point.cpp",
+          "line": 76
+        },
+        {
+          "name": "SubtractingDurationBelowZeroThrows",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_time_point.cpp",
+          "line": 82
+        },
+        {
+          "name": "AdditionOverflowThrows",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_time_point.cpp",
+          "line": 88
+        },
+        {
+          "name": "IsTriviallyCopyable",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_time_point.cpp",
+          "line": 94
+        }
+      ]
+    },
+    {
+      "name": "VirtualClock",
+      "tests": 6,
+      "testsuite": [
+        {
+          "name": "InitialTimeIsEpoch",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_virtual_clock.cpp",
+          "line": 12
+        },
+        {
+          "name": "AdvanceMovesCurrentTimeForward",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_virtual_clock.cpp",
+          "line": 18
+        },
+        {
+          "name": "RepeatedAdvancementAccumulates",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_virtual_clock.cpp",
+          "line": 25
+        },
+        {
+          "name": "AdvanceToEqualCurrentTimeIsNoOp",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_virtual_clock.cpp",
+          "line": 35
+        },
+        {
+          "name": "BackwardAdvancementThrows",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_virtual_clock.cpp",
+          "line": 43
+        },
+        {
+          "name": "DeterministicGivenIdenticalOperationSequence",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_virtual_clock.cpp",
+          "line": 52
+        }
+      ]
+    },
+    {
+      "name": "TimeInvariants",
+      "tests": 4,
+      "testsuite": [
+        {
+          "name": "DurationAdditionIsAssociative",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_time_invariants.cpp",
+          "line": 14
+        },
+        {
+          "name": "TimePointPlusDurationSumIsAssociative",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_time_invariants.cpp",
+          "line": 23
+        },
+        {
+          "name": "TimePointMinusThenPlusReturnsOriginal",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_time_invariants.cpp",
+          "line": 32
+        },
+        {
+          "name": "DifferenceThenAddReconstructsLaterPoint",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_time_invariants.cpp",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "name": "TimeDeterminism",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "IdenticalArithmeticSequenceProducesIdenticalTrace",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_time_determinism.cpp",
+          "line": 46
+        },
+        {
+          "name": "IdenticalArithmeticSequenceProducesIdenticalFinalResult",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_time_determinism.cpp",
+          "line": 61
+        },
+        {
+          "name": "RepeatedManyTimesRemainsStable",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_time_determinism.cpp",
+          "line": 70
+        }
+      ]
+    },
+    {
+      "name": "VariousStartAndTargetPairs\/VirtualClockMonotonicityProperty",
+      "tests": 5,
+      "testsuite": [
+        {
+          "name": "AdvanceToTargetGreaterOrEqualNeverDecreasesCurrent\/0",
+          "value_param": "(0, 0)",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_time_invariants.cpp",
+          "line": 52
+        },
+        {
+          "name": "AdvanceToTargetGreaterOrEqualNeverDecreasesCurrent\/1",
+          "value_param": "(0, 1)",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_time_invariants.cpp",
+          "line": 52
+        },
+        {
+          "name": "AdvanceToTargetGreaterOrEqualNeverDecreasesCurrent\/2",
+          "value_param": "(5, 5)",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_time_invariants.cpp",
+          "line": 52
+        },
+        {
+          "name": "AdvanceToTargetGreaterOrEqualNeverDecreasesCurrent\/3",
+          "value_param": "(5, 6)",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_time_invariants.cpp",
+          "line": 52
+        },
+        {
+          "name": "AdvanceToTargetGreaterOrEqualNeverDecreasesCurrent\/4",
+          "value_param": "(100, 100000)",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_time_invariants.cpp",
+          "line": 52
+        }
+      ]
+    }
+  ]
+}

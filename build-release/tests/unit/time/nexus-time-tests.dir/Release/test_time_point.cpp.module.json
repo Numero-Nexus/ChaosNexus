@@ -1,0 +1,13 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "nexus-time-tests.dir\\Release\\test_time_point.obj",
+            "outputs": [
+                "nexus-time-tests.dir\\Release\\"
+            ],
+            "requires": []
+        }
+    ]
+}

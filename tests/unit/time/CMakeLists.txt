@@ -1,0 +1,10 @@
+nexus_add_test_executable(nexus-time-tests
+    SOURCES
+        test_duration.cpp
+        test_time_point.cpp
+        test_virtual_clock.cpp
+        test_time_invariants.cpp
+        test_time_determinism.cpp
+    LIBS
+        nexus::core
+)

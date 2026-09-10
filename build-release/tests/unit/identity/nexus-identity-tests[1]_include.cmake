@@ -1,0 +1,5 @@
+if(EXISTS "D:/NumeroNexus/ChaosNexus/build-release/tests/unit/identity/nexus-identity-tests[1]_tests.cmake")
+  include("D:/NumeroNexus/ChaosNexus/build-release/tests/unit/identity/nexus-identity-tests[1]_tests.cmake")
+else()
+  add_test(nexus-identity-tests_NOT_BUILT nexus-identity-tests_NOT_BUILT)
+endif()

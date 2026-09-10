@@ -1,0 +1,13 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "nexus-core.dir\\Release\\log_format.obj",
+            "outputs": [
+                "nexus-core.dir\\Release\\"
+            ],
+            "requires": []
+        }
+    ]
+}

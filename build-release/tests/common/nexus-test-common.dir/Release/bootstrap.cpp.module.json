@@ -1,0 +1,13 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "nexus-test-common.dir\\Release\\bootstrap.obj",
+            "outputs": [
+                "nexus-test-common.dir\\Release\\"
+            ],
+            "requires": []
+        }
+    ]
+}

@@ -21,6 +21,7 @@ add_library(nexus-core STATIC
     src/config/config_key.cpp
     src/config/config_value.cpp
     src/hash/hash.cpp
+    src/time/virtual_clock.cpp
 )
 
 target_include_directories(nexus-core

@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "nexus-core.dir\\Debug\\strings.obj",
+            "outputs": [
+                "D:\\NumeroNexus\\ChaosNexus\\build-release\\nexus-core\\Debug\\nexus-core.pdb",
+                "nexus-core.dir\\Debug\\"
+            ],
+            "requires": []
+        }
+    ]
+}

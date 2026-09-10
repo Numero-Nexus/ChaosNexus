@@ -1,0 +1,12 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\numeronexus\\chaosnexus\\tests\\common\\src\\bootstrap.cpp",
+        "ProvidedModule": "",
+        "Includes": [
+            "d:\\numeronexus\\chaosnexus\\tests\\common\\include\\nexus-test-common\\bootstrap.hpp"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

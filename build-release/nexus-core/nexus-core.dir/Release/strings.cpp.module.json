@@ -1,0 +1,13 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "nexus-core.dir\\Release\\strings.obj",
+            "outputs": [
+                "nexus-core.dir\\Release\\"
+            ],
+            "requires": []
+        }
+    ]
+}

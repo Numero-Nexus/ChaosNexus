@@ -1,0 +1,10 @@
+^D:\NUMERONEXUS\CHAOSNEXUS\BUILD-RELEASE\CMAKEFILES\97611956A71AE9929CDD7C97F3DED444\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/NumeroNexus/ChaosNexus -BD:/NumeroNexus/ChaosNexus/build-release --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/NumeroNexus/ChaosNexus/build-release/ChaosNexus.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
