@@ -21,4 +21,5 @@ add_subdirectory(text)
 add_subdirectory(config)
 add_subdirectory(hash)
 add_subdirectory(time)
+add_subdirectory(events)
 
