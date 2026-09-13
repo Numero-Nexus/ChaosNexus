@@ -48,6 +48,9 @@ enum class ErrorCode : types::U8 {
     InternalError,
     NotImplemented,
     PreconditionViolated,
+
+    // Scheduler
+    UnknownSchedulingPolicy,
 };
 
 /// Returns a fixed, human-readable name for `code`.
@@ -90,6 +93,8 @@ enum class ErrorCode : types::U8 {
             return "NotImplemented";
         case ErrorCode::PreconditionViolated:
             return "PreconditionViolated";
+        case ErrorCode::UnknownSchedulingPolicy:
+            return "UnknownSchedulingPolicy";
     }
     return "UNKNOWN";
 }

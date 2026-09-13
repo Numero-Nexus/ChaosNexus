@@ -5,10 +5,8 @@
 # Phase 7A bootstrap target, extended in Phase 8A to expose the
 # top-level include/ root (Core Utilities convention — see
 # 04_SOFTWARE_DESIGN_SPECIFICATION.md / Phase 8A ADR) alongside the
-# original per-module include root. No simulation engine logic exists
-# yet; this target still exists primarily to prove the module compiles
-# and links correctly, now carrying real Core Utilities content
-# (Platform Utilities) as of Phase 8A.
+# original per-module include root, in Phase 10 to add the Event
+# System, and in Phase 11 to add the Scheduler.
 
 add_library(nexus-core STATIC
     src/bootstrap.cpp
@@ -22,6 +20,7 @@ add_library(nexus-core STATIC
     src/config/config_value.cpp
     src/hash/hash.cpp
     src/time/virtual_clock.cpp
+    src/scheduler/scheduler.cpp
 )
 
 target_include_directories(nexus-core

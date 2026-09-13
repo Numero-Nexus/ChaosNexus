@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "nexus-identity-tests.dir\\Debug\\test_strong_id.obj",
+            "outputs": [
+                "D:\\NumeroNexus\\ChaosNexus\\build-release\\tests\\unit\\identity\\nexus-identity-tests.dir\\Debug\\vc145.pdb",
+                "nexus-identity-tests.dir\\Debug\\"
+            ],
+            "requires": []
+        }
+    ]
+}

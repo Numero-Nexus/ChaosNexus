@@ -1,0 +1,218 @@
+{
+  "tests": 28,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "NexusAssertDeathTest",
+      "tests": 2,
+      "testsuite": [
+        {
+          "name": "AbortsWhenConditionFails",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\error\\test_assert.cpp",
+          "line": 37
+        },
+        {
+          "name": "DoesNotAbortWhenConditionHolds",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\error\\test_assert.cpp",
+          "line": 42
+        }
+      ]
+    },
+    {
+      "name": "ErrorCode",
+      "tests": 1,
+      "testsuite": [
+        {
+          "name": "ToStringIsStable",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\error\\test_error_code.cpp",
+          "line": 12
+        }
+      ]
+    },
+    {
+      "name": "ErrorCategory",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "ToStringIsStable",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\error\\test_error_code.cpp",
+          "line": 20
+        },
+        {
+          "name": "MapsEachErrorCodeToExpectedCategory",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\error\\test_error_code.cpp",
+          "line": 29
+        },
+        {
+          "name": "MappingIsConstexprEvaluable",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\error\\test_error_code.cpp",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "name": "Error",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "StoresCodeMessageAndDerivedCategory",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\error\\test_error.cpp",
+          "line": 11
+        },
+        {
+          "name": "CapturesCallerSourceLocationByDefault",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\error\\test_error.cpp",
+          "line": 20
+        },
+        {
+          "name": "AcceptsExplicitSourceLocation",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\error\\test_error.cpp",
+          "line": 28
+        }
+      ]
+    },
+    {
+      "name": "FormatError",
+      "tests": 1,
+      "testsuite": [
+        {
+          "name": "ProducesCategoryCodeAndMessage",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\error\\test_error.cpp",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "name": "Result",
+      "tests": 6,
+      "testsuite": [
+        {
+          "name": "HoldsValueOnSuccessConstruction",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\error\\test_result.cpp",
+          "line": 16
+        },
+        {
+          "name": "HoldsErrorOnFailureConstruction",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\error\\test_result.cpp",
+          "line": 25
+        },
+        {
+          "name": "ValueOrReturnsValueWhenPresent",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\error\\test_result.cpp",
+          "line": 34
+        },
+        {
+          "name": "ValueOrReturnsFallbackOnError",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\error\\test_result.cpp",
+          "line": 40
+        },
+        {
+          "name": "MoveOnlyValueTypeIsSupported",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\error\\test_result.cpp",
+          "line": 46
+        },
+        {
+          "name": "RvalueErrorAccessorMoves",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\error\\test_result.cpp",
+          "line": 55
+        }
+      ]
+    },
+    {
+      "name": "ResultHelpers",
+      "tests": 4,
+      "testsuite": [
+        {
+          "name": "SuccessProducesValueHoldingResult",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\error\\test_result.cpp",
+          "line": 63
+        },
+        {
+          "name": "FailureWithCodeAndMessageProducesErrorHoldingResult",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\error\\test_result.cpp",
+          "line": 71
+        },
+        {
+          "name": "FailureWithExistingErrorIsForwarded",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\error\\test_result.cpp",
+          "line": 80
+        },
+        {
+          "name": "ValueOrFreeFunctionMatchesMember",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\error\\test_result.cpp",
+          "line": 89
+        }
+      ]
+    },
+    {
+      "name": "NexusException",
+      "tests": 2,
+      "testsuite": [
+        {
+          "name": "ExposesUnderlyingError",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\error\\test_exception.cpp",
+          "line": 11
+        },
+        {
+          "name": "WhatContainsCategoryCodeAndMessage",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\error\\test_exception.cpp",
+          "line": 19
+        }
+      ]
+    },
+    {
+      "name": "RuntimeException",
+      "tests": 1,
+      "testsuite": [
+        {
+          "name": "IsCatchableAsNexusExceptionAndStdException",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\error\\test_exception.cpp",
+          "line": 29
+        }
+      ]
+    },
+    {
+      "name": "ConfigurationException",
+      "tests": 1,
+      "testsuite": [
+        {
+          "name": "IsCatchableAsStdException",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\error\\test_exception.cpp",
+          "line": 44
+        }
+      ]
+    },
+    {
+      "name": "InternalException",
+      "tests": 1,
+      "testsuite": [
+        {
+          "name": "CarriesInternalCategory",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\error\\test_exception.cpp",
+          "line": 59
+        }
+      ]
+    },
+    {
+      "name": "NexusVerify",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "DoesNotThrowWhenConditionHolds",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\error\\test_assert.cpp",
+          "line": 15
+        },
+        {
+          "name": "ThrowsInternalExceptionWhenConditionFails",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\error\\test_assert.cpp",
+          "line": 20
+        },
+        {
+          "name": "ThrownErrorCarriesPreconditionViolatedCode",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\error\\test_assert.cpp",
+          "line": 25
+        }
+      ]
+    }
+  ]
+}

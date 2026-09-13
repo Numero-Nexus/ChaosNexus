@@ -1,0 +1,58 @@
+{
+  "tests": 8,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "ConfigurationKeyTest",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "StoresAndReturnsName",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\config\\test_config.cpp",
+          "line": 17
+        },
+        {
+          "name": "EqualityAndOrderingAreValueBased",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\config\\test_config.cpp",
+          "line": 23
+        },
+        {
+          "name": "IsValidNameRejectsEmptyAndLeadingDigit",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\config\\test_config.cpp",
+          "line": 30
+        }
+      ]
+    },
+    {
+      "name": "ConfigurationValueTest",
+      "tests": 5,
+      "testsuite": [
+        {
+          "name": "ReportsTypeForEachSupportedAlternative",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\config\\test_config.cpp",
+          "line": 37
+        },
+        {
+          "name": "TypeSafeAccessorSucceedsForMatchingType",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\config\\test_config.cpp",
+          "line": 45
+        },
+        {
+          "name": "TypeSafeAccessorFailsForMismatchedType",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\config\\test_config.cpp",
+          "line": 53
+        },
+        {
+          "name": "EqualityComparesHeldValue",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\config\\test_config.cpp",
+          "line": 61
+        },
+        {
+          "name": "ToStringFormatsPerHeldType",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\config\\test_config.cpp",
+          "line": 68
+        }
+      ]
+    }
+  ]
+}

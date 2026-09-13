@@ -22,4 +22,5 @@ add_subdirectory(config)
 add_subdirectory(hash)
 add_subdirectory(time)
 add_subdirectory(events)
+add_subdirectory(scheduler)
 

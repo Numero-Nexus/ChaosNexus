@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>D:\NumeroNexus\ChaosNexus\build-release\x64\Debug\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\NumeroNexus\ChaosNexus\build-release\nexus-bench\Debug\nexus-bench.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\NumeroNexus\ChaosNexus\build-release\nexus-cli\Debug\nexus-cli.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\NumeroNexus\ChaosNexus\build-release\tests\unit\config\Debug\nexus-config-tests.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\NumeroNexus\ChaosNexus\build-release\tests\unit\core\Debug\nexus-core-tests.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\NumeroNexus\ChaosNexus\build-release\tests\unit\error\Debug\nexus-error-tests.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\NumeroNexus\ChaosNexus\build-release\tests\unit\events\Debug\nexus-events-tests.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\NumeroNexus\ChaosNexus\build-release\tests\unit\hash\Debug\nexus-hash-tests.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\NumeroNexus\ChaosNexus\build-release\tests\unit\identity\Debug\nexus-identity-tests.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\NumeroNexus\ChaosNexus\build-release\nexus-lab\Debug\nexus-lab.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\NumeroNexus\ChaosNexus\build-release\tests\unit\logging\Debug\nexus-logging-tests.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\NumeroNexus\ChaosNexus\build-release\tests\unit\platform\Debug\nexus-platform-tests.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\NumeroNexus\ChaosNexus\build-release\tests\unit\scheduler\Debug\nexus-scheduler-tests.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\NumeroNexus\ChaosNexus\build-release\tests\unit\text\Debug\nexus-text-tests.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\NumeroNexus\ChaosNexus\build-release\tests\unit\time\Debug\nexus-time-tests.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\NumeroNexus\ChaosNexus\build-release\tests\unit\types\Debug\nexus-types-tests.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\NumeroNexus\ChaosNexus\build-release\x64\Debug\ALL_BUILD</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

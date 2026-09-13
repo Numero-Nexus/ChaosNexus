@@ -19,10 +19,33 @@
 
 #include "nexus/core/time/time_point.hpp"
 
+namespace nexus::core::scheduler {
+class Scheduler;
+}
+namespace nexus::core::time::testing {
+struct VirtualClockTestAccess;
+}
+
 namespace nexus::core::time {
 
 class VirtualClock {
 public:
+    /// Capability token restricting VirtualClock::advance() to its
+    /// sole sanctioned caller. Only nexus::core::scheduler::Scheduler
+    /// may construct one in production code (ADR-0007); a dedicated
+    /// test-only friend exists solely to keep Phase 9 regression
+    /// tests functional before the Scheduler exists.
+    class AdvanceKey {
+    public:
+        AdvanceKey(const AdvanceKey&) = default;
+        AdvanceKey(AdvanceKey&&) = default;
+
+    private:
+        AdvanceKey() = default;
+        friend class nexus::core::scheduler::Scheduler;
+        friend struct nexus::core::time::testing::VirtualClockTestAccess;
+    };
+
     constexpr VirtualClock() noexcept = default;
 
     /// Returns the current virtual time. Safe to call from any
@@ -35,8 +58,10 @@ public:
     /// Advances the clock's current time to `target`. `target` must
     /// be greater than or equal to the current time (FR-015
     /// monotonicity; SDS 10). A smaller `target` is a contract
-    /// violation (ADR-0004), not a recoverable error.
-    auto advance(TimePoint target) -> void;
+    /// violation (ADR-0004), not a recoverable error. `key` proves
+    /// the caller is the sole sanctioned advancement authority
+    /// (ADR-0007).
+    auto advance(TimePoint target, AdvanceKey key) -> void;
 
 private:
     TimePoint current_{TimePoint::epoch()};

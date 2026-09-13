@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "nexus-lab.dir\\Debug\\main.obj",
+            "outputs": [
+                "D:\\NumeroNexus\\ChaosNexus\\build-release\\nexus-lab\\nexus-lab.dir\\Debug\\vc145.pdb",
+                "nexus-lab.dir\\Debug\\"
+            ],
+            "requires": []
+        }
+    ]
+}

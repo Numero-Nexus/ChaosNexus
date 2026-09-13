@@ -1,0 +1,135 @@
+{
+  "tests": 21,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "FifoPolicy",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "ClaimsNoFairness",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\scheduler\\test_fifo_policy.cpp",
+          "line": 31
+        },
+        {
+          "name": "ProvidesNoFairnessBoundUnderAdversarialResubmission",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\scheduler\\test_fifo_policy.cpp",
+          "line": 37
+        },
+        {
+          "name": "DelegatesToQueueOrder",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\scheduler\\test_fifo_policy.cpp",
+          "line": 65
+        }
+      ]
+    },
+    {
+      "name": "PriorityPolicy",
+      "tests": 4,
+      "testsuite": [
+        {
+          "name": "ClaimsNoFairness",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\scheduler\\test_priority_policy.cpp",
+          "line": 31
+        },
+        {
+          "name": "SelectsHighestPriorityAmongSameTimestamp",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\scheduler\\test_priority_policy.cpp",
+          "line": 37
+        },
+        {
+          "name": "UnassignedUnitsDefaultToZeroPriority",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\scheduler\\test_priority_policy.cpp",
+          "line": 53
+        },
+        {
+          "name": "NeverSelectsLaterTimestampOverEarlierOne",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\scheduler\\test_priority_policy.cpp",
+          "line": 68
+        }
+      ]
+    },
+    {
+      "name": "RoundRobinPolicy",
+      "tests": 4,
+      "testsuite": [
+        {
+          "name": "ClaimsFairness",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\scheduler\\test_round_robin_policy.cpp",
+          "line": 31
+        },
+        {
+          "name": "CyclesThroughLanesInRotation",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\scheduler\\test_round_robin_policy.cpp",
+          "line": 37
+        },
+        {
+          "name": "NoIndefiniteStarvationUnderAdversarialPressure",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\scheduler\\test_round_robin_policy.cpp",
+          "line": 54
+        },
+        {
+          "name": "BoundScalesWithLaneCountUnderSustainedAdversarialPressure",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\scheduler\\test_round_robin_policy.cpp",
+          "line": 85
+        }
+      ]
+    },
+    {
+      "name": "Scheduler",
+      "tests": 10,
+      "testsuite": [
+        {
+          "name": "RejectsUnknownPolicyName",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\scheduler\\test_scheduler.cpp",
+          "line": 30
+        },
+        {
+          "name": "AcceptsEachBuiltinPolicyName",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\scheduler\\test_scheduler.cpp",
+          "line": 40
+        },
+        {
+          "name": "AdvanceAndSelectAdvancesClockToSelectedTimestamp",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\scheduler\\test_scheduler.cpp",
+          "line": 51
+        },
+        {
+          "name": "AdvanceAndSelectIsNoOpWhenTimestampNotAfterCurrent",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\scheduler\\test_scheduler.cpp",
+          "line": 71
+        },
+        {
+          "name": "DecisionSequenceIncrementsAcrossCalls",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\scheduler\\test_scheduler.cpp",
+          "line": 86
+        },
+        {
+          "name": "ClockAdvancesMonotonicallyAcrossMultipleDistinctTimestamps",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\scheduler\\test_scheduler.cpp",
+          "line": 104
+        },
+        {
+          "name": "NeverConstructsClockOutsideVirtualClock",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\scheduler\\test_scheduler.cpp",
+          "line": 126
+        },
+        {
+          "name": "RepeatedIdenticalRunsProduceIdenticalTraceForFifo",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\scheduler\\test_scheduler.cpp",
+          "line": 199
+        },
+        {
+          "name": "RepeatedIdenticalRunsProduceIdenticalTraceForPriority",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\scheduler\\test_scheduler.cpp",
+          "line": 210
+        },
+        {
+          "name": "RepeatedIdenticalRunsProduceIdenticalTraceForRoundRobin",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\scheduler\\test_scheduler.cpp",
+          "line": 218
+        }
+      ]
+    }
+  ]
+}

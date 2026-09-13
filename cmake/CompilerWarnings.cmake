@@ -14,6 +14,12 @@ function(nexus_set_warnings target)
         target_compile_options(${target} PRIVATE
             /W4          # High warning level
             /permissive- # Strict standards conformance
+            /EHsc        # Standard C++ exception model; required since
+                         # NEXUS_VERIFY/NexusException (Phase 5 onward)
+                         # throw C++ exceptions. Without this, cl.exe
+                         # compiles with C4530 and an unwind-unsafe
+                         # exception model, and clang-tidy's clang-cl
+                         # driver refuses throw/try entirely.
             /Zc:__cplusplus
             /w14242      # Possible loss of data (conversions)
             /w14254      # Possible loss of data (bitfields)

@@ -126,32 +126,32 @@
         {
           "name": "InitialTimeIsEpoch",
           "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_virtual_clock.cpp",
-          "line": 12
+          "line": 24
         },
         {
           "name": "AdvanceMovesCurrentTimeForward",
           "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_virtual_clock.cpp",
-          "line": 18
+          "line": 30
         },
         {
           "name": "RepeatedAdvancementAccumulates",
           "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_virtual_clock.cpp",
-          "line": 25
+          "line": 37
         },
         {
           "name": "AdvanceToEqualCurrentTimeIsNoOp",
           "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_virtual_clock.cpp",
-          "line": 35
+          "line": 47
         },
         {
           "name": "BackwardAdvancementThrows",
           "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_virtual_clock.cpp",
-          "line": 43
+          "line": 55
         },
         {
           "name": "DeterministicGivenIdenticalOperationSequence",
           "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_virtual_clock.cpp",
-          "line": 52
+          "line": 65
         }
       ]
     },
@@ -162,22 +162,22 @@
         {
           "name": "DurationAdditionIsAssociative",
           "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_time_invariants.cpp",
-          "line": 14
+          "line": 23
         },
         {
           "name": "TimePointPlusDurationSumIsAssociative",
           "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_time_invariants.cpp",
-          "line": 23
+          "line": 32
         },
         {
           "name": "TimePointMinusThenPlusReturnsOriginal",
           "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_time_invariants.cpp",
-          "line": 32
+          "line": 41
         },
         {
           "name": "DifferenceThenAddReconstructsLaterPoint",
           "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_time_invariants.cpp",
-          "line": 41
+          "line": 50
         }
       ]
     },
@@ -210,31 +210,31 @@
           "name": "AdvanceToTargetGreaterOrEqualNeverDecreasesCurrent\/0",
           "value_param": "(0, 0)",
           "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_time_invariants.cpp",
-          "line": 52
+          "line": 61
         },
         {
           "name": "AdvanceToTargetGreaterOrEqualNeverDecreasesCurrent\/1",
           "value_param": "(0, 1)",
           "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_time_invariants.cpp",
-          "line": 52
+          "line": 61
         },
         {
           "name": "AdvanceToTargetGreaterOrEqualNeverDecreasesCurrent\/2",
           "value_param": "(5, 5)",
           "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_time_invariants.cpp",
-          "line": 52
+          "line": 61
         },
         {
           "name": "AdvanceToTargetGreaterOrEqualNeverDecreasesCurrent\/3",
           "value_param": "(5, 6)",
           "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_time_invariants.cpp",
-          "line": 52
+          "line": 61
         },
         {
           "name": "AdvanceToTargetGreaterOrEqualNeverDecreasesCurrent\/4",
           "value_param": "(100, 100000)",
           "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\time\\test_time_invariants.cpp",
-          "line": 52
+          "line": 61
         }
       ]
     }

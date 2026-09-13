@@ -4,7 +4,7 @@
 
 namespace nexus::core::time {
 
-auto VirtualClock::advance(TimePoint target) -> void
+auto VirtualClock::advance(TimePoint target, AdvanceKey /*key*/) -> void
 {
     NEXUS_VERIFY_MSG(
         target >= current_,

@@ -74,6 +74,9 @@ enum class ErrorCategory : types::U8 {
         case ErrorCode::NotImplemented:
         case ErrorCode::PreconditionViolated:
             return ErrorCategory::Internal;
+
+        case ErrorCode::UnknownSchedulingPolicy:
+            return ErrorCategory::Configuration;
     }
     return ErrorCategory::General;
 }

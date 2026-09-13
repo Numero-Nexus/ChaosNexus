@@ -1,0 +1,492 @@
+{
+  "tests": 72,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "TrimTest",
+      "tests": 6,
+      "testsuite": [
+        {
+          "name": "LeftRemovesLeadingWhitespaceOnly",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 14
+        },
+        {
+          "name": "RightRemovesTrailingWhitespaceOnly",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 19
+        },
+        {
+          "name": "TrimRemovesBothSides",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 24
+        },
+        {
+          "name": "EmptyStringYieldsEmptyString",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 29
+        },
+        {
+          "name": "AllWhitespaceYieldsEmptyString",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 34
+        },
+        {
+          "name": "NoWhitespaceIsUnchanged",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 39
+        }
+      ]
+    },
+    {
+      "name": "SplitTest",
+      "tests": 5,
+      "testsuite": [
+        {
+          "name": "BasicDelimiter",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 48
+        },
+        {
+          "name": "EmptyViewYieldsSingleEmptyElement",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 57
+        },
+        {
+          "name": "ConsecutiveDelimitersYieldEmptyElements",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 64
+        },
+        {
+          "name": "EmptyDelimiterYieldsWholeViewUnchanged",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 73
+        },
+        {
+          "name": "MultiCharacterDelimiter",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 80
+        }
+      ]
+    },
+    {
+      "name": "SplitAnyTest",
+      "tests": 1,
+      "testsuite": [
+        {
+          "name": "SplitsOnAnyDelimiterCharacter",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 89
+        }
+      ]
+    },
+    {
+      "name": "JoinTest",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "JoinsPartsWithDelimiter",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 99
+        },
+        {
+          "name": "EmptyPartsYieldsEmptyString",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 105
+        },
+        {
+          "name": "SinglePartYieldsPartUnchanged",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 111
+        }
+      ]
+    },
+    {
+      "name": "SplitJoinTest",
+      "tests": 1,
+      "testsuite": [
+        {
+          "name": "RoundTripsWithMatchingDelimiter",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 117
+        }
+      ]
+    },
+    {
+      "name": "ReplaceAllTest",
+      "tests": 4,
+      "testsuite": [
+        {
+          "name": "ReplacesEveryOccurrence",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 128
+        },
+        {
+          "name": "EmptyTargetLeavesViewUnchanged",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 133
+        },
+        {
+          "name": "TargetNotFoundLeavesViewUnchanged",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 138
+        },
+        {
+          "name": "EmptyViewYieldsEmptyString",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 143
+        }
+      ]
+    },
+    {
+      "name": "ReplaceFirstTest",
+      "tests": 2,
+      "testsuite": [
+        {
+          "name": "ReplacesOnlyFirstOccurrence",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 148
+        },
+        {
+          "name": "TargetNotFoundLeavesViewUnchanged",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 153
+        }
+      ]
+    },
+    {
+      "name": "StartsWithTest",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "DetectsMatchingPrefix",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 162
+        },
+        {
+          "name": "EmptyPrefixAlwaysMatches",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 168
+        },
+        {
+          "name": "PrefixLongerThanViewFails",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 173
+        }
+      ]
+    },
+    {
+      "name": "EndsWithTest",
+      "tests": 2,
+      "testsuite": [
+        {
+          "name": "DetectsMatchingSuffix",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 178
+        },
+        {
+          "name": "SuffixLongerThanViewFails",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 184
+        }
+      ]
+    },
+    {
+      "name": "ContainsTest",
+      "tests": 2,
+      "testsuite": [
+        {
+          "name": "DetectsSubstringAnywhere",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 189
+        },
+        {
+          "name": "EmptyNeedleAlwaysMatches",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 195
+        }
+      ]
+    },
+    {
+      "name": "RemovePrefixTest",
+      "tests": 2,
+      "testsuite": [
+        {
+          "name": "RemovesMatchingPrefix",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 200
+        },
+        {
+          "name": "NonMatchingPrefixLeavesViewUnchanged",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 205
+        }
+      ]
+    },
+    {
+      "name": "RemoveSuffixTest",
+      "tests": 2,
+      "testsuite": [
+        {
+          "name": "RemovesMatchingSuffix",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 210
+        },
+        {
+          "name": "NonMatchingSuffixLeavesViewUnchanged",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 215
+        }
+      ]
+    },
+    {
+      "name": "AsciiCaseTest",
+      "tests": 4,
+      "testsuite": [
+        {
+          "name": "ToLowerConvertsUppercaseOnly",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 224
+        },
+        {
+          "name": "ToUpperConvertsLowercaseOnly",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 229
+        },
+        {
+          "name": "NonAsciiBytesPassThroughUnchanged",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 234
+        },
+        {
+          "name": "EmptyStringYieldsEmptyString",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 242
+        }
+      ]
+    },
+    {
+      "name": "EqualsIgnoreCaseAsciiTest",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "MatchesRegardlessOfAsciiCase",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 248
+        },
+        {
+          "name": "DifferentLengthsNeverMatch",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 254
+        },
+        {
+          "name": "DifferentContentDoesNotMatch",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 259
+        }
+      ]
+    },
+    {
+      "name": "ParseNumberTest",
+      "tests": 6,
+      "testsuite": [
+        {
+          "name": "ParsesValidInteger",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 268
+        },
+        {
+          "name": "ParsesNegativeInteger",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 275
+        },
+        {
+          "name": "InvalidArgumentFailsWithInvalidArgument",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 282
+        },
+        {
+          "name": "EmptyStringFailsWithInvalidArgument",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 289
+        },
+        {
+          "name": "OutOfRangeFailsWithOutOfRange",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 296
+        },
+        {
+          "name": "TrailingCharactersFail",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 303
+        }
+      ]
+    },
+    {
+      "name": "FormatNumberTest",
+      "tests": 4,
+      "testsuite": [
+        {
+          "name": "FormatsPositiveInteger",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 310
+        },
+        {
+          "name": "FormatsNegativeInteger",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 315
+        },
+        {
+          "name": "FormatsZero",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 320
+        },
+        {
+          "name": "FormatsMaxInt64",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 325
+        }
+      ]
+    },
+    {
+      "name": "NumericRoundTripTest",
+      "tests": 1,
+      "testsuite": [
+        {
+          "name": "ParseAndFormatAreInverses",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 330
+        }
+      ]
+    },
+    {
+      "name": "ToHexTest",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "FormatsWithFixedWidthAndPadding",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 341
+        },
+        {
+          "name": "FormatsMaxValueWithNoPadding",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 346
+        },
+        {
+          "name": "FormatsZero",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 351
+        }
+      ]
+    },
+    {
+      "name": "FromHexTest",
+      "tests": 7,
+      "testsuite": [
+        {
+          "name": "ParsesLowercaseDigits",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 356
+        },
+        {
+          "name": "ParsesWithLowercase0xPrefix",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 363
+        },
+        {
+          "name": "ParsesWithUppercase0XPrefix",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 370
+        },
+        {
+          "name": "EmptyStringFailsWithInvalidArgument",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 377
+        },
+        {
+          "name": "PrefixOnlyFailsWithInvalidArgument",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 384
+        },
+        {
+          "name": "InvalidDigitsFailWithInvalidArgument",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 391
+        },
+        {
+          "name": "OutOfRangeFailsWithOutOfRange",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 398
+        }
+      ]
+    },
+    {
+      "name": "HexRoundTripTest",
+      "tests": 1,
+      "testsuite": [
+        {
+          "name": "ToHexAndFromHexAreInverses",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 405
+        }
+      ]
+    },
+    {
+      "name": "StringBuilderTest",
+      "tests": 10,
+      "testsuite": [
+        {
+          "name": "AppendsTextInOrder",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 418
+        },
+        {
+          "name": "StartsEmpty",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 425
+        },
+        {
+          "name": "SizeReflectsAppendedContent",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 432
+        },
+        {
+          "name": "AppendNumberAppendsFormattedValue",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 440
+        },
+        {
+          "name": "ClearResetsContentButKeepsUsable",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 447
+        },
+        {
+          "name": "ViewReflectsCurrentContentsWithoutConsuming",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 457
+        },
+        {
+          "name": "ConstBuildCopiesWithoutConsuming",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 467
+        },
+        {
+          "name": "ReserveDoesNotAffectContent",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 477
+        },
+        {
+          "name": "ConstructorReservesCapacityWithoutAddingContent",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 486
+        },
+        {
+          "name": "HandlesLargeAppendedContent",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\text\\test_strings.cpp",
+          "line": 493
+        }
+      ]
+    }
+  ]
+}

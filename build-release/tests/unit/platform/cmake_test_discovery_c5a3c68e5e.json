@@ -1,0 +1,222 @@
+{
+  "tests": 30,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "PlatformDetectionTest",
+      "tests": 2,
+      "testsuite": [
+        {
+          "name": "ReportsExpectedPlatformForHostOS",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\platform\\test_platform.cpp",
+          "line": 26
+        },
+        {
+          "name": "PlatformIsConstexprEvaluable",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\platform\\test_platform.cpp",
+          "line": 39
+        }
+      ]
+    },
+    {
+      "name": "CompilerDetectionTest",
+      "tests": 2,
+      "testsuite": [
+        {
+          "name": "ReportsExpectedCompilerForHostToolchain",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\platform\\test_platform.cpp",
+          "line": 49
+        },
+        {
+          "name": "CompilerIsConstexprEvaluable",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\platform\\test_platform.cpp",
+          "line": 62
+        }
+      ]
+    },
+    {
+      "name": "ArchitectureDetectionTest",
+      "tests": 2,
+      "testsuite": [
+        {
+          "name": "ReportsExpectedArchitectureForHostCPU",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\platform\\test_platform.cpp",
+          "line": 72
+        },
+        {
+          "name": "ArchitectureIsConstexprEvaluable",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\platform\\test_platform.cpp",
+          "line": 83
+        }
+      ]
+    },
+    {
+      "name": "BuildConfigurationTest",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "DebugAndReleaseAreMutuallyExclusive",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\platform\\test_platform.cpp",
+          "line": 93
+        },
+        {
+          "name": "MatchesNDEBUGDefinition",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\platform\\test_platform.cpp",
+          "line": 98
+        },
+        {
+          "name": "IsDebugIsConstexprEvaluable",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\platform\\test_platform.cpp",
+          "line": 109
+        }
+      ]
+    },
+    {
+      "name": "PointerSizeTest",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "MatchesSizeofVoidPointer",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\platform\\test_platform.cpp",
+          "line": 119
+        },
+        {
+          "name": "IsConstexprEvaluable",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\platform\\test_platform.cpp",
+          "line": 124
+        },
+        {
+          "name": "IsOneOfExpectedSizesOnSupportedArchitectures",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\platform\\test_platform.cpp",
+          "line": 130
+        }
+      ]
+    },
+    {
+      "name": "CppStandardTest",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "IsAtLeastCpp23",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\platform\\test_platform.cpp",
+          "line": 143
+        },
+        {
+          "name": "MatchesBuiltinCplusplusMacro",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\platform\\test_platform.cpp",
+          "line": 149
+        },
+        {
+          "name": "IsConstexprEvaluable",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\platform\\test_platform.cpp",
+          "line": 154
+        }
+      ]
+    },
+    {
+      "name": "EndiannessTest",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "MatchesStdEndianNative",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\platform\\test_platform.cpp",
+          "line": 164
+        },
+        {
+          "name": "IsEitherLittleOrBigOnSupportedArchitectures",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\platform\\test_platform.cpp",
+          "line": 169
+        },
+        {
+          "name": "IsConstexprEvaluable",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\platform\\test_platform.cpp",
+          "line": 178
+        }
+      ]
+    },
+    {
+      "name": "PlatformNameTest",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "NoArgOverloadMatchesCurrentPlatform",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\platform\\test_platform.cpp",
+          "line": 188
+        },
+        {
+          "name": "EveryEnumeratorProducesNonEmptyName",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\platform\\test_platform.cpp",
+          "line": 193
+        },
+        {
+          "name": "IsConstexprEvaluable",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\platform\\test_platform.cpp",
+          "line": 201
+        }
+      ]
+    },
+    {
+      "name": "CompilerNameTest",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "NoArgOverloadMatchesCurrentCompiler",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\platform\\test_platform.cpp",
+          "line": 211
+        },
+        {
+          "name": "EveryEnumeratorProducesNonEmptyName",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\platform\\test_platform.cpp",
+          "line": 216
+        },
+        {
+          "name": "IsConstexprEvaluable",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\platform\\test_platform.cpp",
+          "line": 224
+        }
+      ]
+    },
+    {
+      "name": "ArchitectureNameTest",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "NoArgOverloadMatchesCurrentArchitecture",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\platform\\test_platform.cpp",
+          "line": 234
+        },
+        {
+          "name": "EveryEnumeratorProducesNonEmptyName",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\platform\\test_platform.cpp",
+          "line": 239
+        },
+        {
+          "name": "IsConstexprEvaluable",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\platform\\test_platform.cpp",
+          "line": 246
+        }
+      ]
+    },
+    {
+      "name": "UnknownFallbackTest",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "UnknownPlatformNameIsExplicit",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\platform\\test_platform.cpp",
+          "line": 256
+        },
+        {
+          "name": "UnknownCompilerNameIsExplicit",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\platform\\test_platform.cpp",
+          "line": 262
+        },
+        {
+          "name": "UnknownArchitectureNameIsExplicit",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\platform\\test_platform.cpp",
+          "line": 268
+        }
+      ]
+    }
+  ]
+}

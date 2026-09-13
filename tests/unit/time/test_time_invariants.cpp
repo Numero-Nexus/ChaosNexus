@@ -2,7 +2,12 @@
 // Time, Step 9T). Covers arithmetic associativity and a generalized
 // monotonicity property not already exercised by the Step 9S
 // construction/comparison/arithmetic/boundary tests.
+//
+// Phase 11 Step 11F: VirtualClock::advance() requires a
+// VirtualClock::AdvanceKey capability token (ADR-0007), obtained
+// here via the test-only VirtualClockTestAccess friend.
 
+#include "nexus-test-common/virtual_clock_test_access.hpp"
 #include "nexus/core/time/duration.hpp"
 #include "nexus/core/time/time_point.hpp"
 #include "nexus/core/time/virtual_clock.hpp"
@@ -10,6 +15,10 @@
 #include <gtest/gtest.h>
 
 namespace nexus::core::time::test {
+
+namespace {
+using nexus::core::time::testing::VirtualClockTestAccess;
+} // namespace
 
 TEST(TimeInvariants, DurationAdditionIsAssociative)
 {
@@ -54,10 +63,10 @@ TEST_P(VirtualClockMonotonicityProperty, AdvanceToTargetGreaterOrEqualNeverDecre
     const auto [start_ticks, target_ticks] = GetParam();
 
     VirtualClock clock;
-    clock.advance(TimePoint::from_ticks(start_ticks));
+    clock.advance(TimePoint::from_ticks(start_ticks), VirtualClockTestAccess::make_key());
     const auto before = clock.current();
 
-    clock.advance(TimePoint::from_ticks(target_ticks));
+    clock.advance(TimePoint::from_ticks(target_ticks), VirtualClockTestAccess::make_key());
     const auto after = clock.current();
 
     EXPECT_GE(after, before);

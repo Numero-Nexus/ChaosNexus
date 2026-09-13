@@ -1,0 +1,192 @@
+{
+  "tests": 30,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "Uuid",
+      "tests": 6,
+      "testsuite": [
+        {
+          "name": "DefaultConstructedIsNil",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\identity\\test_uuid.cpp",
+          "line": 26
+        },
+        {
+          "name": "NilFactoryIsNil",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\identity\\test_uuid.cpp",
+          "line": 32
+        },
+        {
+          "name": "NonZeroBytesAreNotNil",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\identity\\test_uuid.cpp",
+          "line": 37
+        },
+        {
+          "name": "EqualityComparesByteValue",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\identity\\test_uuid.cpp",
+          "line": 43
+        },
+        {
+          "name": "OrderingIsLexicographicByBytes",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\identity\\test_uuid.cpp",
+          "line": 53
+        },
+        {
+          "name": "IsConstexprEvaluable",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\identity\\test_uuid.cpp",
+          "line": 63
+        }
+      ]
+    },
+    {
+      "name": "UuidFormat",
+      "tests": 8,
+      "testsuite": [
+        {
+          "name": "ToStringProducesCanonicalLowercaseForm",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\identity\\test_uuid.cpp",
+          "line": 69
+        },
+        {
+          "name": "NilUuidFormatsAsAllZeroes",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\identity\\test_uuid.cpp",
+          "line": 77
+        },
+        {
+          "name": "RoundTripsThroughStringConversion",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\identity\\test_uuid.cpp",
+          "line": 82
+        },
+        {
+          "name": "FromStringAcceptsUppercaseHex",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\identity\\test_uuid.cpp",
+          "line": 94
+        },
+        {
+          "name": "FromStringRejectsWrongLength",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\identity\\test_uuid.cpp",
+          "line": 102
+        },
+        {
+          "name": "FromStringRejectsMissingHyphens",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\identity\\test_uuid.cpp",
+          "line": 110
+        },
+        {
+          "name": "FromStringRejectsNonHexCharacters",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\identity\\test_uuid.cpp",
+          "line": 118
+        },
+        {
+          "name": "StdFormatUsesCanonicalRepresentation",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\identity\\test_uuid.cpp",
+          "line": 126
+        }
+      ]
+    },
+    {
+      "name": "UuidHash",
+      "tests": 2,
+      "testsuite": [
+        {
+          "name": "EqualUuidsHashEqual",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\identity\\test_uuid.cpp",
+          "line": 134
+        },
+        {
+          "name": "UsableAsUnorderedSetKey",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\identity\\test_uuid.cpp",
+          "line": 142
+        }
+      ]
+    },
+    {
+      "name": "StrongId",
+      "tests": 8,
+      "testsuite": [
+        {
+          "name": "DefaultConstructedIsNil",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\identity\\test_strong_id.cpp",
+          "line": 36
+        },
+        {
+          "name": "WrapsProvidedUuidValue",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\identity\\test_strong_id.cpp",
+          "line": 42
+        },
+        {
+          "name": "DistinctTagsAreDistinctTypes",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\identity\\test_strong_id.cpp",
+          "line": 51
+        },
+        {
+          "name": "EqualityAndOrderingMatchUnderlyingUuid",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\identity\\test_strong_id.cpp",
+          "line": 57
+        },
+        {
+          "name": "ZeroOverheadSameSizeAsUuid",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\identity\\test_strong_id.cpp",
+          "line": 67
+        },
+        {
+          "name": "ToStringMatchesUnderlyingUuid",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\identity\\test_strong_id.cpp",
+          "line": 73
+        },
+        {
+          "name": "StdFormatUsesToString",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\identity\\test_strong_id.cpp",
+          "line": 81
+        },
+        {
+          "name": "HashableAndUsableAsUnorderedSetKey",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\identity\\test_strong_id.cpp",
+          "line": 89
+        }
+      ]
+    },
+    {
+      "name": "StrongIdHelpers",
+      "tests": 4,
+      "testsuite": [
+        {
+          "name": "IsNilFreeFunctionMatchesMember",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\identity\\test_strong_id.cpp",
+          "line": 98
+        },
+        {
+          "name": "ValueFreeFunctionMatchesMember",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\identity\\test_strong_id.cpp",
+          "line": 104
+        },
+        {
+          "name": "FromStringParsesValidUuidText",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\identity\\test_strong_id.cpp",
+          "line": 112
+        },
+        {
+          "name": "FromStringForwardsParseFailure",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\identity\\test_strong_id.cpp",
+          "line": 120
+        }
+      ]
+    },
+    {
+      "name": "FrameworkIds",
+      "tests": 2,
+      "testsuite": [
+        {
+          "name": "NodeEventAndSimulationIdAreDistinctTypes",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\identity\\test_strong_id.cpp",
+          "line": 128
+        },
+        {
+          "name": "DefaultConstructAndCompareAsExpected",
+          "file": "D:\\NumeroNexus\\ChaosNexus\\tests\\unit\\identity\\test_strong_id.cpp",
+          "line": 135
+        }
+      ]
+    }
+  ]
+}

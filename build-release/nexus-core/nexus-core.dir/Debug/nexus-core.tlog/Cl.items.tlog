@@ -9,3 +9,4 @@ D:\NumeroNexus\ChaosNexus\nexus-core\src\config\config_key.cpp;D:\NumeroNexus\Ch
 D:\NumeroNexus\ChaosNexus\nexus-core\src\config\config_value.cpp;D:\NumeroNexus\ChaosNexus\build-release\nexus-core\nexus-core.dir\Debug\config_value.obj
 D:\NumeroNexus\ChaosNexus\nexus-core\src\hash\hash.cpp;D:\NumeroNexus\ChaosNexus\build-release\nexus-core\nexus-core.dir\Debug\hash.obj
 D:\NumeroNexus\ChaosNexus\nexus-core\src\time\virtual_clock.cpp;D:\NumeroNexus\ChaosNexus\build-release\nexus-core\nexus-core.dir\Debug\virtual_clock.obj
+D:\NumeroNexus\ChaosNexus\nexus-core\src\scheduler\scheduler.cpp;D:\NumeroNexus\ChaosNexus\build-release\nexus-core\nexus-core.dir\Debug\scheduler.obj

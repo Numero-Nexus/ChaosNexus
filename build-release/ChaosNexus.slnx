@@ -52,6 +52,13 @@
 		<BuildDependency Project="nexus-core/nexus-core.vcxproj"/>
 		<BuildDependency Project="tests/common/nexus-test-common.vcxproj"/>
 	</Project>
+	<Project Path="tests/unit/events/nexus-events-tests.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="1dcf109a-c33d-387a-8234-bbaeec8ad87f">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="_deps/googletest-build/googletest/gtest.vcxproj"/>
+		<BuildDependency Project="_deps/googletest-build/googletest/gtest_main.vcxproj"/>
+		<BuildDependency Project="nexus-core/nexus-core.vcxproj"/>
+		<BuildDependency Project="tests/common/nexus-test-common.vcxproj"/>
+	</Project>
 	<Project Path="tests/unit/hash/nexus-hash-tests.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="0c8e09a5-f936-3aab-a49a-2983298833d3">
 		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
 		<BuildDependency Project="_deps/googletest-build/googletest/gtest.vcxproj"/>
@@ -78,6 +85,13 @@
 		<BuildDependency Project="tests/common/nexus-test-common.vcxproj"/>
 	</Project>
 	<Project Path="tests/unit/platform/nexus-platform-tests.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="a821585f-72c9-376e-9a2a-340223dc4952">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="_deps/googletest-build/googletest/gtest.vcxproj"/>
+		<BuildDependency Project="_deps/googletest-build/googletest/gtest_main.vcxproj"/>
+		<BuildDependency Project="nexus-core/nexus-core.vcxproj"/>
+		<BuildDependency Project="tests/common/nexus-test-common.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/scheduler/nexus-scheduler-tests.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="8ad1b224-3318-3569-abd5-6897048701e5">
 		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
 		<BuildDependency Project="_deps/googletest-build/googletest/gtest.vcxproj"/>
 		<BuildDependency Project="_deps/googletest-build/googletest/gtest_main.vcxproj"/>
@@ -121,11 +135,13 @@
 			<BuildDependency Project="nexus-core/nexus-core.vcxproj"/>
 			<BuildDependency Project="tests/unit/core/nexus-core-tests.vcxproj"/>
 			<BuildDependency Project="tests/unit/error/nexus-error-tests.vcxproj"/>
+			<BuildDependency Project="tests/unit/events/nexus-events-tests.vcxproj"/>
 			<BuildDependency Project="tests/unit/hash/nexus-hash-tests.vcxproj"/>
 			<BuildDependency Project="tests/unit/identity/nexus-identity-tests.vcxproj"/>
 			<BuildDependency Project="nexus-lab/nexus-lab.vcxproj"/>
 			<BuildDependency Project="tests/unit/logging/nexus-logging-tests.vcxproj"/>
 			<BuildDependency Project="tests/unit/platform/nexus-platform-tests.vcxproj"/>
+			<BuildDependency Project="tests/unit/scheduler/nexus-scheduler-tests.vcxproj"/>
 			<BuildDependency Project="tests/common/nexus-test-common.vcxproj"/>
 			<BuildDependency Project="tests/unit/text/nexus-text-tests.vcxproj"/>
 			<BuildDependency Project="tests/unit/time/nexus-time-tests.vcxproj"/>
