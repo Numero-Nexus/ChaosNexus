@@ -23,4 +23,5 @@ add_subdirectory(hash)
 add_subdirectory(time)
 add_subdirectory(events)
 add_subdirectory(scheduler)
+add_subdirectory(kernel)
 
